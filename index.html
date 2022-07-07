@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Índice de massa corporal</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de IMC</h1>
+        <hr>
+        <div class="dados"> <!-- CAMPO PARA INSERÇÃO DE DADOS -->
+            <p>Nome: <input type="text" id="name" style="width: 40%; text-align: justify; padding: 5px;"></p>
+            <p>Peso: <input type="number" name="peso" id="peso" style="width: 40%; text-align: justify; padding: 5px;"></p>
+            <p>Altura: <input type="number" name="altura" id="altura" style="width: 40%; text-align: justify; padding: 5px;"></p>
+                <br>
+            <p><input type="button" value="Calcular" id="calcBtn" onclick="calcIMC()" style="padding: 20px; border-radius: 20px;"></p> <!-- BOTÃO QUE FARÁ O CÁLCULO -->
+        </div>
+        <div  class= "calc"id="calculo"> <!-- CAMPO ONDE SERÁ IMPRESSO O CALCULO -->
+            <p style="font-style: italic;">Aqui será impresso um resultado</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
